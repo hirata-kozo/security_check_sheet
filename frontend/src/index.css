@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全体のレイアウト調整 */
+body {
+  @apply bg-gray-50 text-gray-900 font-sans;
+  margin: 0;
+  padding: 0;
+}
+
+/* アップロードボタンのスタイル */
+.upload-button {
+  @apply px-4 py-2 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition;
+}
+
+/* テキストエリア */
+.textarea {
+  @apply w-full p-3 border border-gray-300 rounded-lg resize-y focus:outline-none focus:ring-2 focus:ring-blue-400;
+  min-height: 120px;
+  white-space: pre-wrap; /* 改行を画面に反映 */
+  word-break: break-word;
+}
+
+/* ローディング表示 */
+.loading {
+  @apply text-blue-600 font-medium mt-2;
+}
+
+/* 回答エリア */
+.answer-box {
+  @apply w-full p-3 bg-white border border-gray-200 rounded-lg shadow mt-4 whitespace-pre-wrap;
+}
